@@ -67,10 +67,10 @@ uint32_t find_vm_kernel_addrperm(void);
 uint32_t find_kernel_pmap(void);
 
 // flush_dcache
-uint32_t find_flush_dcache(void);
+//uint32_t find_flush_dcache(void);
 
 // invalidate_tlb
-uint32_t find_invalidate_tlb(void);
+//uint32_t find_invalidate_tlb(void);
 
 // task_for_pid
 uint32_t find_task_for_pid(void);

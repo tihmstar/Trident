@@ -21,7 +21,7 @@ void exploit(uint32_t);
 @end
 
 @implementation ViewController
-
+void postExploit();
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -41,6 +41,17 @@ void exploit(uint32_t);
         environment = [environment stringByAppendingString:@" (not supported)"];
     }
     self.environmentLabel.text = environment;
+    
+    int ret = setreuid(0, 0);
+    printf("setreuid(0, 0) returned %d\n",ret);
+    
+    
+    char* nm = strdup("/dev/disk0s1s1");
+    int mntr = mount("hfs", "/", 0x10000, &nm);
+    printf("mount=%d\n",mntr);
+    
+
+    
 }
 
 - (void)didReceiveMemoryWarning {

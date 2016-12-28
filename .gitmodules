@@ -1,0 +1,3 @@
+[submodule "external/ios-jailbreak-patchfinder"]
+	path = external/ios-jailbreak-patchfinder
+	url = https://github.com/planetbeing/ios-jailbreak-patchfinder

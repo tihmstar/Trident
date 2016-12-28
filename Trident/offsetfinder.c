@@ -259,49 +259,49 @@ uint32_t find_kernel_pmap(void) {
 	}
 }
 
-uint32_t find_flush_dcache(void) {
-	switch (target_environment) {
-		case iPhone52_iOS921: return 0xbe610;
-		case iPhone41_iOS930: return 0xbc250;
-		case iPhone41_iOS931: return 0xbc250;
-		case iPhone41_iOS932: return 0xbc260;
-		case iPhone41_iOS933: return 0xbc1d4;
-		case iPhone41_iOS934: return 0xbc1d4;
-		case iPhone52_iOS932: return 0xbf274;
-        case iPhone52_iOS91:  return 0xbf7a8;
-		case iPhone53_iOS932: return 0xbf274;
-		case iPhone53_iOS933: return 0xbf404;
-		case iPad21_iOS932: return 0xbc260;
-		case iPad22_iOS932: return 0xbc260;
-		case iPad23_iOS932: return 0xbc260;
-		case iPad24_iOS932: return 0xbc260;
-		case iPad23_iOS933: return 0xbc1d8;
-		case iPad31_iOS934: return 0xbc1d4;
-		default: abort();
-	}
-}
+//uint32_t find_flush_dcache(void) {
+//	switch (target_environment) {
+//		case iPhone52_iOS921: return 0xbe610;
+//		case iPhone41_iOS930: return 0xbc250;
+//		case iPhone41_iOS931: return 0xbc250;
+//		case iPhone41_iOS932: return 0xbc260;
+//		case iPhone41_iOS933: return 0xbc1d4;
+//		case iPhone41_iOS934: return 0xbc1d4;
+//		case iPhone52_iOS932: return 0xbf274;
+//        case iPhone52_iOS91:  return 0xbf7a8;
+//		case iPhone53_iOS932: return 0xbf274;
+//		case iPhone53_iOS933: return 0xbf404;
+//		case iPad21_iOS932: return 0xbc260;
+//		case iPad22_iOS932: return 0xbc260;
+//		case iPad23_iOS932: return 0xbc260;
+//		case iPad24_iOS932: return 0xbc260;
+//		case iPad23_iOS933: return 0xbc1d8;
+//		case iPad31_iOS934: return 0xbc1d4;
+//		default: abort();
+//	}
+//}
 
-uint32_t find_invalidate_tlb(void) {
-	switch (target_environment) {
-		case iPhone52_iOS921: return 0xca600;
-		case iPhone41_iOS930: return 0xc7440;
-		case iPhone41_iOS931: return 0xc7440;
-		case iPhone41_iOS932: return 0xc7440;
-		case iPhone41_iOS933: return 0xc7440;
-		case iPhone41_iOS934: return 0xc7440;
-		case iPhone52_iOS932: return 0xcb560;
-        case iPhone52_iOS91:  return 0xcb600;
-		case iPhone53_iOS932: return 0xcb560;
-		case iPhone53_iOS933: return 0xcb560;
-		case iPad21_iOS932: return 0xc7440;
-		case iPad22_iOS932: return 0xc7440;
-		case iPad23_iOS932: return 0xc7440;
-		case iPad24_iOS932: return 0xc7440;
-		case iPad23_iOS933: return 0xc7450;
-		case iPad31_iOS934: return 0xc7440;
-		default: abort();
-	}
-}
+//uint32_t find_invalidate_tlb(void) {
+//	switch (target_environment) {
+//		case iPhone52_iOS921: return 0xca600;
+//		case iPhone41_iOS930: return 0xc7440;
+//		case iPhone41_iOS931: return 0xc7440;
+//		case iPhone41_iOS932: return 0xc7440;
+//		case iPhone41_iOS933: return 0xc7440;
+//		case iPhone41_iOS934: return 0xc7440;
+//		case iPhone52_iOS932: return 0xcb560;
+//        case iPhone52_iOS91:  return 0xcb600;
+//		case iPhone53_iOS932: return 0xcb560;
+//		case iPhone53_iOS933: return 0xcb560;
+//		case iPad21_iOS932: return 0xc7440;
+//		case iPad22_iOS932: return 0xc7440;
+//		case iPad23_iOS932: return 0xc7440;
+//		case iPad24_iOS932: return 0xc7440;
+//		case iPad23_iOS933: return 0xc7450;
+//		case iPad31_iOS934: return 0xc7440;
+//		default: abort();
+//	}
+//}
 
 uint32_t find_task_for_pid(void) {
 	switch (target_environment) {
@@ -334,7 +334,7 @@ uint32_t find_setreuid(void) {
 		case iPhone41_iOS933: return 0x2a9988;
 		case iPhone41_iOS934: return 0x2a9988;
 		case iPhone52_iOS932: return 0x2af5f8;
-        case iPhone52_iOS91:  return 0x2afefc;
+        case iPhone52_iOS91:  return 0x2b00f0;
 		case iPhone53_iOS932: return 0x2af5f8;
 		case iPhone53_iOS933: return 0x2af7b8;
 		case iPad21_iOS932: return 0x2a985c;
